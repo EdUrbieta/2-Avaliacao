@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="einz">
+        <h1 id="header">Formulário de Coleta para Pesquisa</h1>
+        <p id="ins">Olá! Venho aqui coletar dados de sua comunicação com nossa instituição!</p>
+
+        <form>
+            <label for="nome">• Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="email">• E-mail:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="idade">• Idade:</label><br>
+            <input type="number" id="idade" name="idade">
+            <p>• Você é de Maior Idade?</p>
+            <input type="radio" id="s" name="maioridade" value=True>
+            <label for="sim">Sim</label>
+            <input type="radio" id="n" name="maioridade" value=False>
+            <label for="nao">Não</label></br>
+            </br>
+            <label for="newsletter"> • Deseja receber nossa newsletter?</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value=True></br>
+            </br>
+            <label for="candidaturamsg">• Nos envie sua mensagem de candidatura:</label></br>
+            <textarea id="candmsg" name="candmsg" rows="4" cols="50">
+            </textarea>
+          </form>
+          <button onclick="submit()">Enviar</button>
+          <button onclick="limpar()">Limpar</button>
+
+          <div id="results">
+          </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="limpar.js"></script>
+</body>
+</html>
